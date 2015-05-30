@@ -1,11 +1,15 @@
 services:
-    sonata.admin.post:
+    jam_jar_service:
+        class: AppBundle\Services\JamJarService
+        arguments: [@doctrine.orm.entity_manager]
+    sonata.admin.jam:
         class: AppBundle\Admin\JamJarAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: "Content", label: "JamJar" }
+            - { name: sonata.admin, manager_type: orm, group: "Jam Jars", label: "Jam Jar" }
         arguments:
             - ~
             - AppBundle\Entity\JamJar
             - ~
         calls:
             - [ setTranslationDomain, [AppBundle]]
+            - [ setJamJarService, [@jam_jar_service]]
