@@ -1,9 +1,11 @@
 <?php
 
-
 namespace AppBundle\Tests\Services;
 
+class JamJarServiceTest extends \PHPUnit_Framework_TestCase
+{
+    public function testCreateCopies()
+    {
 
-class JamJarServiceTest extends \PHPUnit_Framework_TestCase {
-
+    }
 }

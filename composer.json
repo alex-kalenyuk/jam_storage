@@ -31,7 +31,11 @@
         "sonata-project/doctrine-orm-admin-bundle": "^2.3"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.3",
+        "phpunit/phpunit": "4.6.*",
+        "squizlabs/php_codesniffer": "*",
+        "phpmd/phpmd" : "@stable",
+        "sebastian/phpcpd": "*"
     },
     "scripts": {
         "post-root-package-install": [
