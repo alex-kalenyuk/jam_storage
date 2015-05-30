@@ -28,6 +28,10 @@ class JamYear
      */
     private $year;
 
+    public function __toString()
+    {
+        return (string)$this->getYear();
+    }
 
     /**
      * Get id
