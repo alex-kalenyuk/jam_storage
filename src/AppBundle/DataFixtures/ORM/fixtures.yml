@@ -1,0 +1,10 @@
+AppBundle\Entity\JamYear:
+        jamYear{1..5}:
+                year: <numberBetween($min = 2000, $max = 2015)>
+AppBundle\Entity\JamType:
+        jamType{1..10}:
+                type: <word()>
+AppBundle\Entity\JamJar:
+        jamJar{1..15}:
+                jamType: @jamType*
+                jamYear: @jamYear*
