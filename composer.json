@@ -2,6 +2,7 @@
     "name": "sany/jam_storage",
     "license": "proprietary",
     "type": "project",
+    "description": "It is a result of Assignment 2 from Levi9 Symfony Training",
     "autoload": {
         "psr-0": {
             "": "src/",
@@ -9,7 +10,9 @@
         }
     },
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.5",
+        "ext-pdo": "*",
+        "ext-pdo-sqlite": "*",
         "symfony/symfony": "2.6.*",
         "doctrine/orm": "~2.2,>=2.2.3,<2.5",
         "doctrine/dbal": "<2.5",
