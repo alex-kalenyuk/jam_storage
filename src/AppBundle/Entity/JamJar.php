@@ -52,7 +52,7 @@ class JamJar
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -75,7 +75,7 @@ class JamJar
     /**
      * Get comment
      *
-     * @return string 
+     * @return string
      */
     public function getComment()
     {
@@ -98,7 +98,7 @@ class JamJar
     /**
      * Get jamType
      *
-     * @return \AppBundle\Entity\JamType 
+     * @return \AppBundle\Entity\JamType
      */
     public function getJamType()
     {
@@ -121,7 +121,7 @@ class JamJar
     /**
      * Get jamYear
      *
-     * @return \AppBundle\Entity\JamYear 
+     * @return \AppBundle\Entity\JamYear
      */
     public function getJamYear()
     {
