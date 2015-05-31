@@ -4,3 +4,4 @@ php:
   - 5.6
   - 5.7
   - hhvm
+script: phpunit --configuration $DB.app.phpunit.xml.dist
