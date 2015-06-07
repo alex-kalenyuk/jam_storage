@@ -27,7 +27,7 @@ class JamJarService
     {
         for ($i = 0; $i < $amount; $i++) {
             $this->em->persist(clone $jamJar);
-            $this->em->flush();
         }
+        $this->em->flush();
     }
 }

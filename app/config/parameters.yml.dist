@@ -3,7 +3,7 @@ parameters:
     database_driver:   pdo_sqlite
     database_host:     127.0.0.1
     database_port:     ~
-    database_name:     jab_storage
+    database_name:     jar_storage
     database_user:     root
     database_password: ~
     database_path: "%kernel.root_dir%/data.db3"

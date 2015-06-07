@@ -20,7 +20,7 @@ class JamJarServiceTest extends \PHPUnit_Framework_TestCase
             ->method('persist')
             ->with($this->equalTo($jamJar))
             ->will($this->returnValue(true));
-        $entityManager->expects($this->exactly(self::COPIES_AMOUNT))
+        $entityManager->expects($this->once())
             ->method('flush')
             ->will($this->returnValue(true));
 
